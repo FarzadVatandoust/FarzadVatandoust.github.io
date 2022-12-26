@@ -1,5 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nonito', sans-serif;
+
+}
+
 body {
     margin: 0;
-    background: red;
+    background: rgb(67, 12, 219);
     text-align: center;
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+
+.left-section{
+   grid-column: span 2;
+   height: 100%;
+   background-color: black;
+}
+
+.right-section{
+    grid-column: span 5;
+    height: 100%;
+    background-color: rgb(154, 153, 163);
+ 
+}
+
+.left-content{
+    padding: 1rem 3rem;
+}
+.profile{
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #f7f7f7;
+}
+
+.name{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 0;
+}
+
+.career{
+   font-size: 1.2rem;
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding-bottom: 1rem 0;
+
+}
+
+
+.main-title{
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+
+}
+
+.contact-info ul{
+    padding: 1rem 0;
+    font-size: 0.6rem;
+}
+
+.contact-info ul li{
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.contact-info ul i{
+    padding-right: 0.4rem;
+    font-size: 1.1rem;
+    color: rgb(65, 63, 63);
+}
+
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    padding: 0.4rem 0;
+    justify-content: space-between;
+
+
+
+}
+
+
+.progress-bar{
+    width: 100%;
+    height: 0.4rem;
+    background-color: red;
+    position: relative;
+    border-radius: 12px;   
+}
+
+.progress{
+    height: 100%;
+    position: absolute;
+    left: zero;
+    background-color: aqua;
+    border-radius: 12px;
+}
+
+.py-progress{
+    width: 70%;
+}
+
+.comsol-progress{
+    width: 50%;
+}
+.skill-title{
+   text-transform: uppercase;
+   color: white;
+   font-size: 0.8rem;
+
 }
