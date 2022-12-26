@@ -9,7 +9,9 @@
 
 body {
     margin: 0;
-    background: rgb(67, 12, 219);
+    background-image: url(background.jpg);
+    background-size: 1300px;
+    background-color: #cccccc;
     text-align: center;
 }
 
@@ -23,44 +25,48 @@ body {
 }
 
 .left-section{
-   grid-column: span 2;
-   height: 100%;
-   background-color: black;
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
 }
 
 .right-section{
     grid-column: span 5;
     height: 100%;
-    background-color: rgb(154, 153, 163);
+    width: 100%;
+    background-color: rgb(70, 70, 73);
  
 }
 
 .left-content{
-    padding: 1rem 3rem;
+    padding: 2.5rem 2.5rem;
 }
 .profile{
     width: 100%;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #8EE4AF;
+    
 }
 
 .profile img{
     width: 100%;
     border-radius: 50%;
-    border: 4px solid #f7f7f7;
+    border: 2px solid #e3f114;
+
 }
 
 .name{
-    font-size: 2rem;
-    color: white;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 1.5rem 0;
+    letter-spacing: px;
+    padding: 2rem 0rem;
 }
 
 .career{
-   font-size: 1.2rem;
+   font-size: 1rem;
    color: rgb(255, 255, 255);
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -68,23 +74,26 @@ body {
 
 }
 
-
+.contact-info{
+    border-bottom: 1px solid #8EE4AF;
+}
 .main-title{
-    font-size: 1.2rem;
-    color: white;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
+    align-items: center;
 
 }
 
 .contact-info ul{
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     font-size: 0.6rem;
 }
 
 .contact-info ul li{
-    padding: 0.4rem 0;
+    padding: 0.2rem 0;
     display: flex;
     align-items: center;
     color: white;
@@ -94,24 +103,27 @@ body {
 .contact-info ul i{
     padding-right: 0.4rem;
     font-size: 1.1rem;
-    color: rgb(65, 63, 63);
+    color: rgb(155, 117, 117);
 }
 
+
+.skills-section ul{
+    padding: 1rem 0;
+}
 .skills-section ul li{
     display: grid;
-    grid-template-columns: repeat(2 1fr);
-    padding: 0.4rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.24rem 0;
     justify-content: space-between;
-
-
-
+    align-items: center;
+    text-align: left;
 }
 
 
 .progress-bar{
     width: 100%;
     height: 0.4rem;
-    background-color: red;
+    background-color: rgb(85, 82, 82);
     position: relative;
     border-radius: 12px;   
 }
@@ -120,7 +132,7 @@ body {
     height: 100%;
     position: absolute;
     left: zero;
-    background-color: aqua;
+    background-color: rgb(30, 255, 0);
     border-radius: 12px;
 }
 
@@ -128,6 +140,15 @@ body {
     width: 70%;
 }
 
+.matlab-progress{
+    width: 70%;
+}
+.dp-progress{
+    width: 70%;
+}
+.r-progress{
+    width: 20%;
+}
 .comsol-progress{
     width: 50%;
 }
