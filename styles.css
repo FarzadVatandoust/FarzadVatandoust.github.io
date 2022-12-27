@@ -10,7 +10,7 @@
 body {
     margin: 0;
     background-image: url(background.jpg);
-    background-size: 1300px;
+    background-size: 500px;
     background-color: #cccccc;
     text-align: center;
 }
@@ -38,7 +38,7 @@ body {
     background-color: rgb(70, 70, 73);
  
 }
-
+/* -------------- the left section ------------ */
 .left-content{
     padding: 2.5rem 2.5rem;
 }
@@ -157,4 +157,98 @@ body {
    color: white;
    font-size: 0.8rem;
 
+}
+
+/* -------------- the right section ------------ */
+
+right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    position: relative;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 1rem;  
+}
+
+.right-title::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: .2rem;
+    background-color: rgba(173, 148, 148, 0.418);
+    border-radius: 12px;
+    right: 0.5rem;
+    top: 65%;
+    transform: translateY(-50%);
+    
+}
+
+
+.para{
+    line-height: 1.6rem;
+    color: #d8dee6;
+    font-size: 1.1rem;
+    padding: 0rem 2rem;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.sect{
+    padding-bottom: 2rem;
+}
+
+
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.right-tl-content{
+    grid-column: span 2;
+}
+
+.left-tl-content tl-title{
+    text-transform: capitalize;
+}
+
+.tl-content ul li{
+    list-style-type: square;
+    text-align: left;
+    font-size: 1rem;
+     
+}
+
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #002333;
+}
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #2D9CDB;
+}
+
+.tl-content{
+    border-left: 1px solid #ccc;
+    padding-left: 0.3rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
 }
