@@ -7,10 +7,17 @@
 
 }
 
+:root{
+    --main:#252323;
+    --corners:#2c2c2cd0;
+    --title: #ffffff;
+    --text: #c5bebe;
+    --border: #1DB954;
+}
 body {
     margin: 0;
     background-image: url(background.jpg);
-    background-size: 500px;
+    background-size: 1500px;
     background-color: #cccccc;
     text-align: center;
 }
@@ -28,14 +35,14 @@ body {
     grid-column: span 2;
     height: 100%;
     width: 100%;
-    background-color: rgb(31, 30, 30);
+    background-color: var(--corners);
 }
 
 .right-section{
     grid-column: span 5;
     height: 100%;
     width: 100%;
-    background-color: rgb(70, 70, 73);
+    background-color: var(--main);
  
 }
 /* -------------- the left section ------------ */
@@ -45,20 +52,20 @@ body {
 .profile{
     width: 100%;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #8EE4AF;
+    border-bottom: 1px solid var(--border);
     
 }
 
 .profile img{
     width: 100%;
-    border-radius: 50%;
-    border: 2px solid #e3f114;
+    border-radius: 5%;
+    border: 4px solid var(--border);
 
 }
 
 .name{
     font-size: 1.8rem;
-    color: rgb(255, 255, 255);
+    color: var(--title);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: px;
@@ -67,7 +74,7 @@ body {
 
 .career{
    font-size: 1rem;
-   color: rgb(255, 255, 255);
+   color: var(--title);
    text-transform: uppercase;
    letter-spacing: 1px;
    padding-bottom: 1rem 0;
@@ -75,11 +82,11 @@ body {
 }
 
 .contact-info{
-    border-bottom: 1px solid #8EE4AF;
+    border-bottom: 1px solid var(--border);
 }
 .main-title{
     font-size: 1rem;
-    color: rgb(255, 255, 255);
+    color: var(--title);
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-top: 1.2rem;
@@ -96,14 +103,14 @@ body {
     padding: 0.2rem 0;
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--title);
 
 }
 
 .contact-info ul i{
     padding-right: 0.4rem;
     font-size: 1.1rem;
-    color: rgb(155, 117, 117);
+    color: var(--border);
 }
 
 
@@ -123,7 +130,7 @@ body {
 .progress-bar{
     width: 100%;
     height: 0.4rem;
-    background-color: rgb(85, 82, 82);
+    background-color: var(--main);
     position: relative;
     border-radius: 12px;   
 }
@@ -132,7 +139,7 @@ body {
     height: 100%;
     position: absolute;
     left: zero;
-    background-color: rgb(30, 255, 0);
+    background-color: var(--border);
     border-radius: 12px;
 }
 
@@ -154,7 +161,7 @@ body {
 }
 .skill-title{
    text-transform: uppercase;
-   color: white;
+   color: var(--title);
    font-size: 0.8rem;
 
 }
@@ -164,11 +171,35 @@ body {
 right-main-content{
     padding: 2rem 3rem;
 }
+.topnav{
+    padding: 1rem 0;
+    background-color: var(--main);
+    overflow: hidden;
+}
+
+.topnav a{
+    color: var(--title);
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: var(--border);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: var(--border);
+    color: white;
+  }
 
 .right-title{
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #2F80ED;
+    color: var(--title);
     margin-bottom: 1.2rem;
     position: relative;
     text-align: left;
@@ -179,11 +210,11 @@ right-main-content{
 .right-title::after{
     content: "";
     position: absolute;
-    width: 70%;
-    height: .2rem;
-    background-color: rgba(173, 148, 148, 0.418);
+    width: 60%;
+    height: .07rem;
+    background-color: var(--border);
     border-radius: 12px;
-    right: 0.5rem;
+    right: 1rem;
     top: 65%;
     transform: translateY(-50%);
     
@@ -192,7 +223,7 @@ right-main-content{
 
 .para{
     line-height: 1.6rem;
-    color: #d8dee6;
+    color: var(--text);
     font-size: 1.1rem;
     padding: 0rem 2rem;
     text-align: center;
@@ -206,11 +237,11 @@ right-main-content{
 
 .timeline{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .right-tl-content{
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .left-tl-content tl-title{
@@ -221,33 +252,45 @@ right-main-content{
     list-style-type: square;
     text-align: left;
     font-size: 1rem;
+    text-justify: inter-word;
+    padding: 0.2rem 0;
+     
+}
+
+.tl-content-t2 ul li{
+    list-style-type: square;
+    text-align: left;
+    font-size: 1rem;
+    text-justify: inter-word;
+    padding: 0.2rem 0;
      
 }
 
 .tl-title{
     letter-spacing: 1px;
     font-size: 1.3rem;
-    color: #002333;
+    color: var(--text);
 }
 .tl-title-2{
     letter-spacing: 1px;
     font-size: 1.3rem;
-    color: #2D9CDB;
+    color: var(--text);
 }
 
 .tl-content{
-    border-left: 1px solid #ccc;
+    border-left: 1px solid var(--border);
     padding-left: 0.3rem;
     position: relative;
     padding-bottom: 2rem;
 }
+
 
 .tl-title-2::before{
     content: "";
     position: absolute;
     width: .7rem;
     height: .7rem;
-    background-color: #2D9CDB;
+    background-color: var(--border);
     border-radius: 50%;
     transform: translateX(-50%);
     left: 0;

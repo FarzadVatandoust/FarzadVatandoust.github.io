@@ -16,7 +16,7 @@
     <section class="left-section">
         <div class="left-content">
             <div class="profile">
-                <img src="/avatar.jpeg" alt="">
+                <img src="/avatar2.jpg" alt="">
                 <div class="name">
                     Farzad Vatandoust
                 </div>
@@ -101,7 +101,16 @@
     <!-------------------------- The right section ---------------------------------->
     <section class="right-section">
         <div class="right-main-content">
-            <section class="about sect">
+            <section class="topnav">
+                <a class="active" href="#about">About</a>
+                <a href="#publications">Publication</a>
+                <a href="#languages">Language</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+
+            </section>
+
+            <section class="about sect" id="about">
                 <h2 class="right-title">About Me</h2>
                 <p class="para">
                     Hi, my name is Farzad Vatandoust and I am mechanial engineer experinced in data-driven modeling , machine learning,
@@ -114,26 +123,102 @@
 
                 </p>
             </section>
+            <section class="interests" >
+                <div class="tl-content-t2">
+                    <h2 class="right-title">interests</h2>
+                    
+                        <ul class="para">
+                            <li>
+                                Physic-informed machine learning
+                            </li>
+                            <li>
+                                Probabilistic machine learning and uncertainty quantification
+                            </li>
+                            <li>
+                                Optimization, surrogate modeling, and control
+                            </li>
+                            <li>
+                                Design automation
+                            </li>
+                        </ul>
+                </div>
+            </section>
 
-            <section class="experince sect">
+            <section class="publications" id="publications">
+                <div class="tl-content-t2">
+                    <h2 class="right-title">publications</h2>
+                    
+                        <ul class="para">
+                            <li>
+                                Amiri, H. A., Asiaei, S., & Vatandoust, F. (2023). Design optimization
+                                and performance tuning of curved-DC-iDEP particle separation chips. Chemical Engineering Research and Design,
+                                189, 652-663. <a href="https://doi.org/10.1016/j.cherd.2022.11.049">https://doi.org/10.1016/j.cherd.2022.11.049</a>. (Published)
+                            </li>
+                            <li>
+                                Farzad Vatandoust, Hoseyn A. Amiri, Sima Mas-hafi. DLDNN: Deterministic Lateral Displacement
+                                Design Automation by Neural Network. (Preprints <a href="https://arxiv.org/abs/2208.14303">link</a>)
+                            </li>
+                            <li> 
+                                Mohammad Mehdi Keumarsi, Pooria Feizy, Rassol Dezhkam, Farzad Vatandoust, Hoseyn A. Amiri, Amir Shamloo.
+                                Continuous on-chip iDEP cell separation and lysis design. (Under review)
+                            </li>
+                        </ul>
+                </div>
+            </section>
+
+            <section class="languages" id="languages">
+                <h2 class="right-title">Languages</h2>
+                <div class="timeline">
+                    <div class="left-tl-content">
+                        <h5 class="tl-title">IELTS</h5>
+                        <p class="para">Nov 2021</p>
+                    </div>
+                    <div class="right-tl-content">
+                        <div class="tl-content">
+                            <p class="para">
+                                Overal:7, Listening: 7.5, Reading: 7, Writing: 6, Speaking: 7
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="left-tl-content">
+                        <h5 class="tl-title">GRE</h5>
+                        <p class="para">Nov 2022</p>
+                    </div>
+                    <div class="right-tl-content">
+                        <div class="tl-content">
+                            <p class="para">
+                                Overal: 319, Quantitative: 169, Verbal: 150, Writing: 3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experince sect" id="experience">
                 <h2 class="right-title">Experience</h2>
                 <div class="timeline">
                     <div class="left-tl-content">
                         <h5 class="tl-title">SIBlab</h5>
-                        <p class="para">2017 - 2019</p>
+                        <p class="para">2020 - 2022</p>
                     </div>
                     <div class="right-tl-content">
                         <div class="tl-content">
                             <h5 class="tl-title-2">Graduate Researcher</h5>
                             <ul class="para">
                                 <li>
-                                    Droplet SINDy: 
+                                    Droplet SINDy: Data-driven system identification of droplet
+                                     generator device via Sparse Identification of Nonlinear Dynamical systems (SINDy) method.
                                 </li>
                                 <li>
-                                    DLDNN: 
+                                    DLDNN: Design automation of Deterministic Lateral
+                                     Displacement (DLD) device by generative neural network and NSGA3 optimization algorithm
                                 </li>
                                 <li>
-                                    Design Optimization.
+                                    Design optimization and performance tuning of curved-DC-iDEP particle separation
+                                     chips via linking a multi-objective
+                                    optimization algorithms in MATLAB with COMSOL simulation.
                                 </li>
 
                             </ul>
@@ -150,14 +235,13 @@
                             <h5 class="tl-title-2">Graduate Researcher</h5>
                             <ul class="para">
                                 <li>
-                                    Droplet SINDy: 
+                                    Design of penta-mode lattice for guiding
+                                     acoustic waves using the genetic algorithm optimization method (via linking MATLAB and COMSOL)
                                 </li>
                                 <li>
-                                    DLDNN: 
+                                    Guided a team of researchers in the acoustic analysis of a muffler transmission loss
                                 </li>
-                                <li>
-                                    Design Optimization.
-                                </li>
+
 
                             </ul>
                         </div>
@@ -173,106 +257,84 @@
                             <h5 class="tl-title-2">Undergraduate Researcher</h5>
                             <ul class="para">
                                 <li>
-                                    Droplet SINDy: 
+                                    Computed the acoustic characteristics of an airfoil by large eddy simulation (ANSYS and COMSOL)
                                 </li>
                                 <li>
-                                    DLDNN: 
+                                    Developed a FEM code for statical and vibrational analysis of rod and beam (MATLAB)
                                 </li>
-                                <li>
-                                    Design Optimization.
-                                </li>
-
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="education sect">
+            <section class="education sect" id="education">
                 <h2 class="right-title">education</h2>
                 <div class="timeline">
                     <div class="left-tl-content">
-                        <h5 class="tl-title">Cheney School</h5>
-                        <p class="para">2015 - 2016</p>
+                        <h5 class="tl-title">IUST</h5>
+                        <p class="para">2016 - 2019</p>
                     </div>
                     <div class="right-tl-content">
                         <div class="tl-content">
-                            <h5 class="tl-title-2">Gcse's</h5>
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                voluptatem deleniti, 
-                                laboriosam odio nobis quae fugit facilis quo.
-                            </p>
+                            <h5 class="tl-title-2">Graduate Research Assistant</h5>
+                            <ul class="para">
+                                <li>
+                                    Thesis: Design Optimization of Penta Mode Lattice for Guiding Acoustic Waves (adviser Dr. R Madoliat)
+                                </li>
+                                <li>
+                                    Relevant Coursework: Optimization of Mechanical Systems,
+                                     Advanced Automatic Control, Advanced Vibration, Dynamic Systems, Advanced Mathematics
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline">
                     <div class="left-tl-content">
-                        <h5 class="tl-title">Cheney School</h5>
-                        <p class="para">2016 - 2018</p>
+                        <h5 class="tl-title">BNTU</h5>
+                        <p class="para">2012 - 2016</p>
                     </div>
                     <div class="right-tl-content">
                         <div class="tl-content">
-                            <h5 class="tl-title-2">A - Levels</h5>
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                voluptatem deleniti, 
-                                laboriosam odio nobis quae fugit facilis quo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="left-tl-content">
-                        <h5 class="tl-title">University of Sussex</h5>
-                        <p class="para">2018 - Present</p>
-                    </div>
-                    <div class="right-tl-content">
-                        <div class="tl-content">
-                            <h5 class="tl-title-2">Computer Science</h5>
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                voluptatem deleniti, 
-                                laboriosam odio nobis quae fugit facilis quo.
-                            </p>
+                            <h5 class="tl-title-2">Undergraduate Researcher</h5>
+                            <ul class="para">
+                                <li>
+                                    Thesis: Acoustics Analysis of 2D Airfoils via ANSYS (adviser. Dr. M Dardel)
+                                </li>
+                                <li>
+                                    Ranked 12th among 170 students
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="awards sect">
-                <h2 class="right-title">Awards</h2>
-                <div class="timeline">
-                    <div class="left-tl-content">
-                        <h5 class="tl-title">Microsoft</h5>
-                        <p class="para">June 2016</p>
-                    </div>
-                    <div class="right-tl-content">
-                        <div class="tl-content">
-                            <h5 class="tl-title-2">Excellent Work</h5>
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                voluptatem deleniti, 
-                                laboriosam odio nobis quae fugit facilis quo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="left-tl-content">
-                        <h5 class="tl-title">Alphabet Inc</h5>
-                        <p class="para">June 2016</p>
-                    </div>
-                    <div class="right-tl-content">
-                        <div class="tl-content">
-                            <h5 class="tl-title-2">The Star Employee</h5>
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                voluptatem deleniti, 
-                                laboriosam odio nobis quae fugit facilis quo.
-                            </p>
-                        </div>
-                    </div>
+
+            <section class="Certificate">
+                <div class="tl-content-t2">
+                    <h2 class="right-title">certificates</h2>
+                    
+                        <ul class="para">
+                            <li>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/4L2BKEKYQAWY">Bayesian Method for Machine Learning</a>
+                                 by Higher School of Economic University
+                                
+                            </li>
+                            <li>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/AFL3SMMG8HH2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n">Deep Learning Specialization</a>
+                                 from DeepLearing. AI by Andrew Ng
+                            </li>
+                            <li>
+                                <a href="https://www.coursera.org/account/accomplishments/professional-cert/JWAGPCDQKMUV?utm_source=email&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof">Google Data Analytics</a>
+                                  Professional Certificate
+                            </li>
+                            <li>
+                                Good with Words: Writing and Editing by University of Michigan (Ongoing)
+                            </li>
+                        </ul>
                 </div>
             </section>
+           
         </div>
     </section>
    </main> 
