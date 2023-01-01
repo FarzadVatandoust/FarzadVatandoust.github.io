@@ -143,21 +143,30 @@ body {
     border-radius: 12px;
 }
 
-.py-progress{
+.comsol-progress{
     width: 70%;
 }
-
 .matlab-progress{
     width: 70%;
 }
-.dp-progress{
-    width: 70%;
+.py-progress{
+    width: 60%;
+}
+.opt-progress{
+    width: 60%;
+}
+.ml-progress{
+    width: 60%;
+}
+.adobe-progress{
+    width: 30%;
+}
+
+.bayes-progress{
+    width: 20%;
 }
 .r-progress{
     width: 20%;
-}
-.comsol-progress{
-    width: 50%;
 }
 .skill-title{
    text-transform: uppercase;
